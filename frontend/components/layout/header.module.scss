@@ -1,0 +1,75 @@
+@import "../../styles/variables.scss";
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3rem 5rem;
+	position: fixed;
+	opacity: 0;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+	transition: background 800ms, padding 500ms, box-shadow 700ms;
+
+	&.header_scrolled {
+		padding: 1rem 4rem;
+		box-shadow: $box-shadow;
+		background-color: #ffffff;
+	}
+
+	.logo_container {
+		.logo_text {
+			font-size: 2.6rem;
+			font-weight: 400;
+			color: $secondary-color;
+			font-family: $secondary-font;
+			text-transform: uppercase;
+			transform: translateY(0.1rem);
+
+			.logo_special {
+				color: $primary-color;
+			}
+
+			@media (width < 570px) {
+				display: none;
+			}
+		}
+	}
+
+	.nav_bar {
+		li {
+			text-transform: uppercase;
+			color: $primary-color;
+			@media (width < 900px) {
+				display: none;
+			}
+		}
+
+		.nav_link {
+			transition: 500ms;
+			cursor: pointer;
+		}
+
+		.nav_link::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background-color: $primary-color;
+			width: 0;
+			height: 2px;
+			transition: 0.4s;
+		}
+
+		.nav_link:hover::before,
+		.nav_link:focus::before {
+			width: 100%;
+		}
+
+		.nav_link:hover,
+		.nav_link:focus {
+			transform: scale(1.1);
+		}
+	}
+}

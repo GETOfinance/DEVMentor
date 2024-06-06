@@ -1,0 +1,55 @@
+@import "../../styles/variables.scss";
+
+.session {
+	h3 {
+		font-size: 1.8rem;
+		font-weight: 600;
+		color: $primary-color;
+	}
+
+	button {
+		align-self: center;
+	}
+
+	.sessionDetail {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 8px 0;
+		border-bottom: 1px solid #f0f0f0;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		.sessionLabel {
+			font-weight: 600;
+			color: #333333;
+		}
+
+		.value {
+			color: #555555;
+			font-size: 0.9rem;
+			text-align: right;
+		}
+
+		.confirmation_light {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+
+			&.confirmed {
+				background-color: #28a745;
+			}
+
+			&.notConfirmed {
+				background-color: #dc3545;
+			}
+		}
+
+		.badge {
+			width: 40px;
+			height: 40px;
+		}
+	}
+}
