@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+
+.container {
+	max-width: 900px;
+	margin: 8rem auto;
+	opacity: 0;
+	font-family: Arial, sans-serif;
+	box-shadow: $box-shadow;
+	padding: 3rem 4rem;
+	background-color: #fff;
+	border-radius: 5px;
+
+	h1 {
+		color: $primary-color;
+		text-align: center;
+		font-size: 3rem;
+	}
+
+	h2 {
+		color: $primary-color;
+		margin-top: 20px;
+		line-height: 1.3;
+	}
+
+	p {
+		color: #111;
+		line-height: 1.6;
+	}
+}

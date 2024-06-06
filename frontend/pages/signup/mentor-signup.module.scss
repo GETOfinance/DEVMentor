@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+
+.mentor_form {
+	max-width: 600px;
+	margin: 0 auto;
+	box-shadow: $box-shadow;
+}
+
+.form_error {
+	color: red;
+}

@@ -1,0 +1,34 @@
+@import "../../styles/variables.scss";
+
+.mentorProfile {
+	max-width: 1000px;
+	margin: 20px auto 0;
+
+	.reviewMessage {
+		font-size: 1rem;
+		color: #dc3545;
+		font-weight: 600;
+		padding: 10px;
+		border-radius: 8px;
+		text-align: center;
+		background-color: #ffecec;
+	}
+
+	.availabilityToggle {
+		display: flex;
+		align-items: center;
+		margin-top: 10px;
+
+		label {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			font-weight: 500;
+		}
+
+		input[type="checkbox"] {
+			accent-color: $primary-color;
+		}
+	}
+}
